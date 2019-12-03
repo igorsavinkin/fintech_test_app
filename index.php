@@ -1,27 +1,13 @@
 <?php
-/*require_once dirname(__FILE__).'/book.php';
-require_once dirname(__FILE__).'/address.php';
-require_once dirname(__FILE__).'/contact.php';
-*/
-
 /**
- * Short description...
+ * Test file handing app logic
  *
- * Long description
- * Broken down into several lines
- *
- * License notice...
- */
-//namespace Test; 
-//$prefix = 'Test\\';
-function my_autoloader() {
-  include dirname(__FILE__).'\Contact.php';
-  include dirname(__FILE__).'\Book.php';
-  include dirname(__FILE__).'\Address.php';
-}
-
-// register the autoloader
-spl_autoload_register( 'my_autoloader');
+ * Creates some contacts (class Contact) and stores them 
+ * in a Book class instances for a certain addresses (class Address).
+ * 
+ * Namespace is defined inside `autoloader.php` file
+ */ 
+include 'autoloader.php'; 
 
 # Create first contact
 $contact = new Contact;
