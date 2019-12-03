@@ -1,7 +1,6 @@
 <?php
 /**
  * `Contact` class containing 2 fields: `name` and `email`
- *
  */
 //namespace Test;
 
@@ -11,8 +10,9 @@ class Contact {
 	private $email;
 	function __construct() {
         $this->name = '';
-		$this->email ='';
+		$this->email = '';
     }
+	// getters
 	public function getName()   
     {
         return $this->name;
@@ -21,6 +21,7 @@ class Contact {
     {
         return $this->email;
     }
+	// setters
 	public function setName($name)   
     {
         $this->name = $name;

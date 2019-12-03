@@ -1,7 +1,7 @@
 <?php
 /**
- * `Book` class containing composed field `records`.  
- * Field `records`' instance stores one address (class Address) and multiple contacts (class Contact)
+ * The `Book` class containing a composed field `records`.  
+ * Field `records`' stores one address (class Address) and multiple associated contacts (class Contact)
  */
 class Book {
 
@@ -13,18 +13,9 @@ class Book {
     }
 	
 	public function createAddress($address) {
-		$addr =new Address;
+		$addr = new Address;
 		$address($addr); 
 		$this->records[]['address']= $addr;
-		/*
-		echo 'Address:<pre>';
-		print_r($addr); 
-		echo '</pre>';		
-		
-		echo 'Book:<pre>';
-		print_r($this); 
-		echo '</pre>';
-		*/
     }
 
 	public function render(){ 

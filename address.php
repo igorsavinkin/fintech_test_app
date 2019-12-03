@@ -1,11 +1,9 @@
 <?php
 /**
- * Class Address having fields: 
+ * Class `Address` containg both 
+ * (1) regular fields and 
+ * (2) contacts array/set
  *
- * Long description
- * Broken down into several lines
- *
- * License notice...
  */
 class Address {
 
@@ -13,8 +11,8 @@ class Address {
 	private $street;
 	protected $city;
 	protected $county;
-	public $postcode;
-	public $country;
+	private $postcode;
+	private $country;
 	private $contacts;
 	
 	public function __construct()

@@ -7,6 +7,7 @@
  * 
  * Namespace is defined inside `autoloader.php` file
  */ 
+//https://www.php.net/manual/ru/language.namespaces.rationale.php#116280
 include 'autoloader.php'; 
 
 # Create first contact

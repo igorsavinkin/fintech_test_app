@@ -11,8 +11,8 @@ function loadClass($className) {
 	$fileName = '';
 	$namespace = 'Test';
 
-	// Sets the include path as the "src" directory
-	$includePath = dirname(__FILE__).DIRECTORY_SEPARATOR; //.'src';
+	// Sets the include path to the same directory
+	$includePath = dirname(__FILE__); // DIRECTORY_SEPARATOR .'src';
 
 	if (false !== ($lastNsPos = strripos($className, '\\'))) {
 		$namespace = substr($className, 0, $lastNsPos);
